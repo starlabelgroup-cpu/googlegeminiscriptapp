@@ -1,0 +1,161 @@
+campaign:
+  name: "Top Speed Appliance | South Florida Repair"
+  status: ENABLED
+  advertising_channel_type: SEARCH
+
+  bidding_strategy:
+    type: MAXIMIZE_CONVERSIONS
+    target_cpa: 35.00
+
+  budget:
+    name: "Top Speed Appliance Daily Budget"
+    amount_micros: 50000000 # $50/day
+    delivery_method: STANDARD
+
+  geo_targeting:
+    locations:
+      - "Boca Raton, FL"
+      - "Hollywood, FL"
+      - "Weston, FL"
+      - "Coral Springs, FL"
+      - "Fort Lauderdale, FL"
+    radius:
+      miles: 25
+    excluded_locations:
+      - "Alaska"
+      - "Hawaii"
+      - "Puerto Rico"
+
+  language_targets:
+    - "en"
+
+  conversion_goals:
+    - "Phone Call"
+    - "Book Service Form"
+
+ad_groups:
+  - name: "General Appliance Repair"
+    status: ENABLED
+    cpc_bid_micros: 3000000 # $3.00
+
+    keywords:
+      - text: "appliance repair near me"
+        match_type: PHRASE
+      - text: "same day appliance repair"
+        match_type: PHRASE
+      - text: "emergency appliance repair"
+        match_type: PHRASE
+      - text: "appliance repair service"
+        match_type: EXACT
+
+    ads:
+      - type: RESPONSIVE_SEARCH_AD
+        final_url: "https://topspeedappliance.com"
+        headlines:
+          - "Fast Appliance Repair Near You"
+          - "Same Day Appliance Repair"
+          - "Top Speed Appliance"
+          - "Licensed & Insured Technicians"
+          - "Call Now For Service"
+        descriptions:
+          - "Professional appliance repair with fast response times."
+          - "Trusted local technicians. Affordable & reliable service."
+
+  - name: "Refrigerator Repair"
+    status: ENABLED
+    cpc_bid_micros: 3300000 # $3.30
+
+    keywords:
+      - text: "refrigerator repair near me"
+        match_type: PHRASE
+      - text: "fridge repair service"
+        match_type: PHRASE
+      - text: "refrigerator not cooling"
+        match_type: EXACT
+
+    ads:
+      - type: RESPONSIVE_SEARCH_AD
+        final_url: "https://topspeedappliance.com/refrigerator-repair"
+        headlines:
+          - "Refrigerator Repair Today"
+          - "Fridge Not Cooling?"
+          - "Same Day Fridge Repair"
+        descriptions:
+          - "Fast refrigerator repair for all major brands."
+          - "Call now for same-day service."
+
+  - name: "Washer & Dryer Repair"
+    status: ENABLED
+    cpc_bid_micros: 3100000 # $3.10
+
+    keywords:
+      - text: "washer repair near me"
+        match_type: PHRASE
+      - text: "dryer repair near me"
+        match_type: PHRASE
+      - text: "washing machine repair"
+        match_type: EXACT
+
+    ads:
+      - type: RESPONSIVE_SEARCH_AD
+        final_url: "https://topspeedappliance.com/washer-dryer-repair"
+        headlines:
+          - "Washer & Dryer Repair"
+          - "Same Day Laundry Repair"
+          - "Local Appliance Experts"
+        descriptions:
+          - "Reliable washer & dryer repair services."
+          - "Fast appointments. Call today."
+
+negative_keywords:
+  campaign_level:
+    - "jobs"
+    - "career"
+    - "salary"
+    - "manual"
+    - "parts"
+    - "used appliances"
+    - "wholesale"
+    - "DIY"
+    - "how to fix"
+    - "free"
+    - "how to"
+    - "video"
+    - "youtube"
+    - "repair parts"
+    - "cheap"
+    - "discount"
+    - "coupon"
+    - "motor"
+    - "belt"
+
+extensions:
+  call_extension:
+    phone_number: "+1XXXXXXXXXX"
+    call_reporting_enabled: true
+
+  sitelinks:
+    - title: "Book Service"
+      final_url: "https://topspeedappliance.com/book"
+    - title: "Refrigerator Repair"
+      final_url: "https://topspeedappliance.com/refrigerator-repair"
+    - title: "Washer & Dryer Repair"
+      final_url: "https://topspeedappliance.com/washer-dryer-repair"
+    - title: "Contact Us"
+      final_url: "https://topspeedappliance.com/contact"
+
+  callouts:
+    - "Same Day Service"
+    - "Licensed & Insured"
+    - "Local Technicians"
+    - "All Major Brands"
+    - "Fast Response"
+
+  structured_snippets:
+    header: "Services"
+    values:
+      - "Refrigerator Repair"
+      - "Washer Repair"
+      - "Dryer Repair"
+      - "Dishwasher Repair"
+      - "Oven & Stove Repair"
